@@ -1,4 +1,4 @@
-# Magic Wrapper
+# Magic Wrapper [![Cocoapod Version](https://cocoapod-badges.herokuapp.com/v/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper) [![Cocoapod Platform](https://cocoapod-badges.herokuapp.com/p/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper)
 
 ![magicwrapper](https://cloud.githubusercontent.com/assets/139272/5159344/8e9b92dc-7317-11e4-9f29-a94d17401996.png)
 
