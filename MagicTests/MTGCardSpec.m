@@ -18,7 +18,7 @@ describe(@"MTGCard", ^{
     describe(@"properties", ^{
         context(@"fake card", ^{
             beforeEach(^{
-                card = [[MTGCard alloc] initWithDictionary:cards[0]];
+                card = [[MTGCard alloc] initWithDictionary:cards.firstObject];
             });
             
             it(@"has the correct promo", ^{
@@ -36,7 +36,7 @@ describe(@"MTGCard", ^{
         
         context(@"real card", ^{
             beforeEach(^{
-                card = [[MTGCard alloc] initWithDictionary:cards[1]];
+                card = [[MTGCard alloc] initWithDictionary:cards.lastObject];
             });
             
             it(@"has the correct low res URL", ^{
