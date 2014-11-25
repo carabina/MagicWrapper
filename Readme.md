@@ -1,4 +1,4 @@
-# Magic Wrapper [![Cocoapod Version](https://cocoapod-badges.herokuapp.com/v/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper) [![Cocoapod Platform](https://cocoapod-badges.herokuapp.com/p/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper)
+# Magic Wrapper [![Travis-CI](https://travis-ci.org/otaviocc/MagicWrapper.svg?branch=master)](https://travis-ci.org/otaviocc/MagicWrapper) [![Cocoapod Version](https://cocoapod-badges.herokuapp.com/v/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper) [![Cocoapod Platform](https://cocoapod-badges.herokuapp.com/p/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper)
 
 ![magicwrapper](https://cloud.githubusercontent.com/assets/139272/5171794/958d3bfa-73cf-11e4-80ca-944765542483.png)
 
