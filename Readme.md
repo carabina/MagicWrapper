@@ -1,6 +1,6 @@
 # Magic Wrapper [![Cocoapod Version](https://cocoapod-badges.herokuapp.com/v/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper) [![Cocoapod Platform](https://cocoapod-badges.herokuapp.com/p/MagicWrapper/badge.png)](http://cocoapods.org/?q=MagicWrapper)
 
-![magicwrapper](https://cloud.githubusercontent.com/assets/139272/5159344/8e9b92dc-7317-11e4-9f29-a94d17401996.png)
+![magicwrapper](https://cloud.githubusercontent.com/assets/139272/5171794/958d3bfa-73cf-11e4-80ca-944765542483.png)
 
 Magic Wrapper is an Objective-C client/wrapper for [M:tgDb](https://www.mtgdb.info/), the [Magic the Gathering](http://magic.wizards.com/) open database project. It consists of an API wrapper responsible for the network calls (``MTGAPIWrapper``), requests classes (subclasses of the ``MTGRequest`` class), and classes for cards and card sets (``MTGCard`` and ``MTGCardSet``).
 
