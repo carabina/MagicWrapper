@@ -47,7 +47,7 @@ describe(@"MTGSearchRequest", ^{
             __block NSDictionary *expectedDict;
             
             beforeEach(^{
-                expectedDict = @{@"q" : @"manacost eq 3 and name m Unicorn and power m infinity"};
+                expectedDict = @{@"q" : @"manacost eq 3 and name m 'Unicorn' and power m 'infinity'"};
             });
             
             it(@"returns path w/ correct search query (in alphabetical order)", ^{
@@ -59,7 +59,7 @@ describe(@"MTGSearchRequest", ^{
             __block NSDictionary *expectedDict;
             
             beforeEach(^{
-                expectedDict = @{@"q" : @"manacost eq 3 and name m Unicorn and power m infinity",
+                expectedDict = @{@"q" : @"manacost eq 3 and name m 'Unicorn' and power m 'infinity'",
                                  @"start" : @1,
                                  @"limit" : @10};
                 
