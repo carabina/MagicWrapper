@@ -47,7 +47,9 @@ NSString *const MTGSearchSetID = @"setId";
     NSMutableArray *queryArray = [NSMutableArray array];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
-    for (NSString *key in self.query.allKeys) {
+    NSArray *keys = [self.query.allKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    for (NSString *key in keys) {
         id value = self.query[key];
         
         NSString *compare = [value isKindOfClass:[NSNumber class]] ? @"eq" : @"m";

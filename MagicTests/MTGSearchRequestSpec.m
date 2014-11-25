@@ -16,8 +16,8 @@ describe(@"MTGSearchRequest", ^{
     
     beforeEach(^{
         query = @{MTGSearchName : @"Unicorn",
-                  MTGSearchPower : @"infinity",
-                  MTGSearchManaCost : @3};
+                  MTGSearchManaCost : @3,
+                  MTGSearchPower : @"infinity"};
         
         request = [[MTGSearchRequest alloc] initWithQuery:query];
     });
@@ -50,7 +50,7 @@ describe(@"MTGSearchRequest", ^{
                 expectedDict = @{@"q" : @"manacost eq 3 and name m Unicorn and power m infinity"};
             });
             
-            it(@"returns path w/ correct search query", ^{
+            it(@"returns path w/ correct search query (in alphabetical order)", ^{
                 expect(request.parameters).to.equal(expectedDict);
             });
         });
