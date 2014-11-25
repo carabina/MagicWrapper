@@ -1,0 +1,5 @@
+language: objective-c
+before_install:
+    - pod install
+xcode_workspace: Magic.xcworkspace
+xcode_scheme: MagicTests
