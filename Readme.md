@@ -16,9 +16,10 @@ Magic Wrapper is an Objective-C client/wrapper for [M:tgDb](https://www.mtgdb.in
 
 [CocoaPods](http://cocoapods.org) is the recommended way to consume Magic Wrapper
 
-1.  Add MagicWrapper to your Podfile ``pod 'MagicWrapper'``.
+1. Add MagicWrapper to your Podfile ``pod 'MagicWrapper'``.
     1. Use ``pod search MagicWrapper`` to search for specific versions of MagicWrapper.
-1.  Install the pod by running `pod install`.
+1. Install the pod by running `pod install`.
+1. Import the MagicWrapper's header file in your product ``#import <MagicWrapper/MagicWrapper.h>``
 
 ## API Wrapper
 
