@@ -2,4 +2,6 @@
 
 @interface MTGCardSetsRequest : MTGRequest
 
+- (instancetype)initWithCardSets:(NSArray *)cardSets;
+
 @end

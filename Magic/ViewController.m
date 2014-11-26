@@ -92,18 +92,6 @@
 
 #pragma mark Sets
 
-- (IBAction)setTapped:(id)sender
-{
-    MTGCardSetRequest *request = [[MTGCardSetRequest alloc] initWithSetID:@"KTK"];
-    
-    [self.wrapper submitRequest:request
-                        success:^(MTGRequest *request, MTGCardSet *set) {
-                            NSLog(@"==> %@", set);
-                        } failure:^(MTGRequest *request, NSError *error) {
-                            NSLog(@"==> %@", error.localizedDescription);
-                        }];
-}
-
 - (IBAction)setsTapped:(id)sender
 {
     MTGCardSetsRequest *request = [[MTGCardSetsRequest alloc] init];
@@ -111,6 +99,30 @@
     [self.wrapper submitRequest:request
                         success:^(MTGRequest *request, NSArray *sets) {
                             NSLog(@"==> %@", sets);
+                        } failure:^(MTGRequest *request, NSError *error) {
+                            NSLog(@"==> %@", error.localizedDescription);
+                        }];
+}
+
+- (IBAction)selectedSetsTapped:(id)sender
+{
+    MTGCardSetsRequest *request = [[MTGCardSetsRequest alloc] initWithCardSets:@[@"4ED", @"KTK"]];
+    
+    [self.wrapper submitRequest:request
+                        success:^(MTGRequest *request, NSArray *sets) {
+                            NSLog(@"==> %@", sets);
+                        } failure:^(MTGRequest *request, NSError *error) {
+                            NSLog(@"==> %@", error.localizedDescription);
+                        }];
+}
+
+- (IBAction)setTapped:(id)sender
+{
+    MTGCardSetRequest *request = [[MTGCardSetRequest alloc] initWithSetID:@"KTK"];
+    
+    [self.wrapper submitRequest:request
+                        success:^(MTGRequest *request, MTGCardSet *set) {
+                            NSLog(@"==> %@", set);
                         } failure:^(MTGRequest *request, NSError *error) {
                             NSLog(@"==> %@", error.localizedDescription);
                         }];

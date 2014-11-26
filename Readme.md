@@ -90,7 +90,14 @@ All the possible scenarios are described below.
 @end
 ```
 
-``MTGCardSetsRequest`` doesn't have custom init methods. When requests are submitted, ``responseObject`` returns as an ``NSArray`` of ``MTGCardSet`` objects.
+``MTGCardSetsRequest`` has two init methods. The first one fetches all the sets available and latter fetches the given sets by ID. When requests are submitted, ``responseObject`` returns as an ``NSArray`` of ``MTGCardSet`` objects.
+
+```objective-c
+@interface MTGCardSetsRequest : MTGRequest
+- (instancetype)init;
+- (instancetype)initWithCardSets:(NSArray *)cardSets;
+@end
+```
 
 ## Search Requests
 
