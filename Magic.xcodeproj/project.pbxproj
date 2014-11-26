@@ -93,6 +93,7 @@
 		7A8A4C671A2067B700B489D1 /* MTGAPIWrapperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGAPIWrapperSpec.m; sourceTree = "<group>"; };
 		7A8A4C6C1A2096AA00B489D1 /* MTGResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGResponse.h; sourceTree = "<group>"; };
 		7A8A4C6D1A2096AA00B489D1 /* MTGResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGResponse.m; sourceTree = "<group>"; };
+		7ABF410D1A26968E004F0667 /* MagicWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicWrapper.h; sourceTree = "<group>"; };
 		7AFE91C51A1DBFC70006165A /* Magic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFE91C91A1DBFC70006165A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFE91CA1A1DBFC70006165A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		7A1B8EE21A1DC2DC0083431C /* MTG API Wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				7ABF410D1A26968E004F0667 /* MagicWrapper.h */,
 				7A1B8EEC1A1DD4330083431C /* MTGAPIWrapper.h */,
 				7A1B8EED1A1DD4330083431C /* MTGAPIWrapper.m */,
 				7A8A4C4E1A1EFFDE00B489D1 /* MTGCard.h */,

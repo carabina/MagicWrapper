@@ -1,14 +1,5 @@
 #import "ViewController.h"
-#import "MTGAPIWrapper.h"
-#import "MTGCardTypesRequest.h"
-#import "MTGCardSubtypesRequest.h"
-#import "MTGCardRequest.h"
-#import "MTGCardsRequest.h"
-#import "MTGCardSetRequest.h"
-#import "MTGCardSetsRequest.h"
-#import "MTGSearchRequest.h"
-#import "MTGCard.h"
-#import "MTGCardSet.h"
+#import "MagicWrapper.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) MTGAPIWrapper *wrapper;
