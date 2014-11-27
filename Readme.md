@@ -164,7 +164,7 @@ Output from the NSLog above:
 )
 ```
 
-The same response being used to populate an colletion view using ``MTGCard``'s property ``NSURL *highResURL``:
+The same response being used to populate a colletion view using ``MTGCard``'s property ``NSURL *highResURL``:
 
 ![magicbook](https://cloud.githubusercontent.com/assets/139272/5211262/0e4646a8-7593-11e4-9ba6-91b7ec4e96b8.jpg)
 
