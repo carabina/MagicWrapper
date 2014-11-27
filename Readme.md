@@ -5,7 +5,7 @@ Magic Wrapper is an Objective-C client/wrapper for [M:tgDb](https://www.mtgdb.in
 
 * [API Wrapper](#api-wrapper)
 * Requests
-    * [Card Types Requests](#Card-types-requests)
+    * [Card Types Requests](#card-types-requests)
     * [Cards Requests](#cards-requests)
     * [Card Sets Requests](#card-sets-requests)
     * [Search Requests](#search-requests) (+ request example)
