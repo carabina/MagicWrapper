@@ -40,7 +40,7 @@
         self.basicLand = [[dictionary mtg_objectForKey:@"basicLand"] integerValue];
         self.total = [[dictionary mtg_objectForKey:@"total"] integerValue];
         self.cardIDs = [dictionary mtg_objectForKey:@"cardIds"];
-        self.releasedAt = dictionary[@"releasedAt"];
+        self.releasedAt = [dictionary mtg_objectForKey:@"releasedAt"];
     }
     
     return self;
