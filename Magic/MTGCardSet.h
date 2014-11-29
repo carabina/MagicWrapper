@@ -16,6 +16,4 @@
 @property (nonatomic, strong, readonly) NSString *releasedAt;
 @property (nonatomic, strong, readonly) NSArray *cardIDs;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
-
 @end

@@ -7,6 +7,14 @@
 @property (nonatomic, strong) id responseObject;
 @end
 
+@interface MTGCard ()
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+@end
+
+@interface MTGCardSet ()
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+@end
+
 @implementation MTGResponse
 
 #pragma mark - Initialization

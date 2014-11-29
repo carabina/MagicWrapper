@@ -27,6 +27,4 @@
 @property (nonatomic, strong, readonly) NSURL *lowResURL;
 @property (nonatomic, strong, readonly) NSURL *highResURL;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
-
 @end

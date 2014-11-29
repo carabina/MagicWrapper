@@ -5,6 +5,10 @@
 #import "MTGCard.h"
 #import "MTGCardsFixture.h"
 
+@interface MTGCard ()
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+@end
+
 SpecBegin(MTGCard)
 
 describe(@"MTGCard", ^{

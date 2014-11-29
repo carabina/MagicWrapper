@@ -9,6 +9,14 @@
 #import "MTGCardsFixture.h"
 #import "MTGSetsFixture.h"
 
+@interface MTGCard ()
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+@end
+
+@interface MTGCardSet ()
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+@end
+
 SpecBegin(MTGResponse)
 
 describe(@"MTGResponse", ^{
