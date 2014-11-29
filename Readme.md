@@ -5,10 +5,13 @@ Magic Wrapper is an Objective-C client/wrapper for [M:tgDb](https://www.mtgdb.in
 
 * [API Wrapper](#api-wrapper)
 * Requests
-    * [Card Types Requests](#Card-types-requests)
+    * [Card Types Requests](#card-types-requests)
     * [Cards Requests](#cards-requests)
     * [Card Sets Requests](#card-sets-requests)
     * [Search Requests](#search-requests) (+ request example)
+* Objects
+    * [MTGCard](#mtgcard)
+    * [MTGCardSet](#mtgcardset)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -39,22 +42,24 @@ and it has one method, responsible for all the API requests:
 
 When requests are submitted, ``responseObject`` can assume different types depending on the request type. Possible types are:
 
-* ``MGCard``
-* ``MGCardSet``
+* ``MTGCard``
+* ``MTGCardSet``
 * ``NSArray`` of
-    * ``MGCard`` objects
-    * ``MGCardSet`` objects
+    * ``MTGCard`` objects
+    * ``MTGCardSet`` objects
 
 All the possible scenarios are described below.
-    
-## Card Types Requests
+
+## Requests
+
+### Card Types Requests
 
 * MTGCardTypesRequest
 * MTGCardSubtypesRequest
 
 ``MTGCardTypesRequest`` and ``MTGCardSubtypesRequest`` don't have custom init methods. When requests are submitted, ``responseObject`` returns as an ``NSArray`` of ``NSStrings``.
 
-## Cards Requests
+### Cards Requests
 
 * MTGCardRequest
 * MTGCardsRequest
@@ -77,7 +82,7 @@ All the possible scenarios are described below.
 @end
 ```
 
-## Card Sets Requests
+### Card Sets Requests
 
 * MTGCardSetRequest
 * MTGCardSetsRequest
@@ -99,7 +104,7 @@ All the possible scenarios are described below.
 @end
 ```
 
-## Search Requests
+### Search Requests
 
 * MTGSearchRequest
 
@@ -162,6 +167,32 @@ Output from the NSLog above:
     "<MTGCard: 0x7be7af70, name: Shivan Dragon, id: 25688, type: Creature, mana cost: 6, set id: 7ED>",
     "<MTGCard: 0x7be7afe0, name: Shivan Dragon, id: 26622, type: Creature, mana cost: 6, set id: BTD>"
 )
+```
+
+## Objects
+
+As mentioned before, ``responseObject`` can assume different types depending on the request type. Possible types are:
+
+* ``MTGCard``
+* ``MTGCardSet``
+* ``NSArray`` of
+    * ``MTGCard`` objects
+    * ``MTGCardSet`` objects
+
+### MTGCard
+
+``MTGCard`` represents a Magic: the Gathering card. All properties are read-only. For convenience, it implements the methods ``-isEqual:``, ``-hash``, and it also implements the method ``-description`` as shown below:
+
+```
+<MTGCard: 0x7aeab0b0, name: Shivan Dragon, id: 222, type: Creature, mana cost: 6, set id: LEA>
+```
+
+### MTGCardSet
+
+``MTGCardSet`` represents a Magic: the Gathering set. All properties are read-only. It implements the methods ``-isEqual:``, ``-hash``, and ``-description`` as shown below:
+
+```
+<MTGCardSet: 0x7c0d7150, name: Khans of Tarkir, id: KTK, type: Expansion, n. cards: 269>
 ```
 
 # Contributing
