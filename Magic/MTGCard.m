@@ -1,4 +1,5 @@
 #import "MTGCard.h"
+#import "NSDictionary+MagicWrapper.h"
 
 static NSString *const kMTGCardLowResURL = @"http://api.mtgdb.info/content/card_images/%@.jpeg";
 static NSString *const kMTGCardHighResURL = @"http://api.mtgdb.info/content/hi_res_card_images/%@.jpg";
@@ -41,28 +42,28 @@ static NSString *const kMTGCardHighResURL = @"http://api.mtgdb.info/content/hi_r
     
     if (self) {
         self.dictionary = dictionary;
-        self.token = [dictionary[@"token"] boolValue];
-        self.promo = [dictionary[@"promo"] boolValue];
-        self.identifier = [dictionary[@"id"] integerValue];
-        self.relatedCardId = [dictionary[@"relatedCardId"] integerValue];
-        self.setNumber = [dictionary[@"setNumber"] integerValue];
-        self.convertedManaCost = [dictionary[@"convertedManaCost"] integerValue];
-        self.power = [dictionary[@"power"] integerValue];
-        self.toughness = [dictionary[@"toughness"] integerValue];
-        self.loyalty = [dictionary[@"loyalty"] integerValue];
-        self.name = dictionary[@"name"];
-        self.searchName = dictionary[@"searchName"];
-        self.text = dictionary[@"description"];
-        self.flavor = dictionary[@"flavor"];
-        self.manaCost = dictionary[@"manaCost"];
-        self.cardSetName = dictionary[@"cardSetName"];
-        self.type = dictionary[@"type"];
-        self.subType = dictionary[@"subType"];
-        self.rarity = dictionary[@"rarity"];
-        self.artist = dictionary[@"artist"];
-        self.cardSetId = dictionary[@"cardSetId"];
-        self.colors = dictionary[@"colors"];
-        self.releasedAt = self.dictionary[@"releasedAt"];
+        self.token = [[dictionary mtg_objectForKey:@"token"] boolValue];
+        self.promo = [[dictionary mtg_objectForKey:@"promo"] boolValue];
+        self.identifier = [[dictionary mtg_objectForKey:@"id"] integerValue];
+        self.relatedCardId = [[dictionary mtg_objectForKey:@"relatedCardId"] integerValue];
+        self.setNumber = [[dictionary mtg_objectForKey:@"setNumber"] integerValue];
+        self.convertedManaCost = [[dictionary mtg_objectForKey:@"convertedManaCost"] integerValue];
+        self.power = [[dictionary mtg_objectForKey:@"power"] integerValue];
+        self.toughness = [[dictionary mtg_objectForKey:@"toughness"] integerValue];
+        self.loyalty = [[dictionary mtg_objectForKey:@"loyalty"] integerValue];
+        self.name = [dictionary mtg_objectForKey:@"name"];
+        self.searchName = [dictionary mtg_objectForKey:@"searchName"];
+        self.text = [dictionary mtg_objectForKey:@"description"];
+        self.flavor = [dictionary mtg_objectForKey:@"flavor"];
+        self.manaCost = [dictionary mtg_objectForKey:@"manaCost"];
+        self.cardSetName = [dictionary mtg_objectForKey:@"cardSetName"];
+        self.type = [dictionary mtg_objectForKey:@"type"];
+        self.subType = [dictionary mtg_objectForKey:@"subType"];
+        self.rarity = [dictionary mtg_objectForKey:@"rarity"];
+        self.artist = [dictionary mtg_objectForKey:@"artist"];
+        self.cardSetId = [dictionary mtg_objectForKey:@"cardSetId"];
+        self.colors = [dictionary mtg_objectForKey:@"colors"];
+        self.releasedAt = [dictionary mtg_objectForKey:@"releasedAt"];
     }
     
     return self;

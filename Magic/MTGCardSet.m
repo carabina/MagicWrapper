@@ -1,4 +1,5 @@
 #import "MTGCardSet.h"
+#import "NSDictionary+MagicWrapper.h"
 
 @interface MTGCardSet ()
 @property (nonatomic, strong) NSDictionary *dictionary;
@@ -27,18 +28,18 @@
     
     if (self) {
         self.dictionary = dictionary;
-        self.identifier = dictionary[@"id"];
-        self.name = dictionary[@"name"];
-        self.type = dictionary[@"type"];
-        self.block = dictionary[@"block"];
-        self.shortDescription = dictionary[@"description"];
-        self.common = [dictionary[@"common"] integerValue];
-        self.uncommon = [dictionary[@"uncommon"] integerValue];
-        self.rare = [dictionary[@"rare"] integerValue];
-        self.mythicRare = [dictionary[@"mythicRare"] integerValue];
-        self.basicLand = [dictionary[@"basicLand"] integerValue];
-        self.total = [dictionary[@"total"] integerValue];
-        self.cardIDs = dictionary[@"cardIds"];
+        self.identifier = [dictionary mtg_objectForKey:@"id"];
+        self.name = [dictionary mtg_objectForKey:@"name"];
+        self.type = [dictionary mtg_objectForKey:@"type"];
+        self.block = [dictionary mtg_objectForKey:@"block"];
+        self.shortDescription = [dictionary mtg_objectForKey:@"description"];
+        self.common = [[dictionary mtg_objectForKey:@"common"] integerValue];
+        self.uncommon = [[dictionary mtg_objectForKey:@"uncommon"] integerValue];
+        self.rare = [[dictionary mtg_objectForKey:@"rare"] integerValue];
+        self.mythicRare = [[dictionary mtg_objectForKey:@"mythicRare"] integerValue];
+        self.basicLand = [[dictionary mtg_objectForKey:@"basicLand"] integerValue];
+        self.total = [[dictionary mtg_objectForKey:@"total"] integerValue];
+        self.cardIDs = [dictionary mtg_objectForKey:@"cardIds"];
         self.releasedAt = dictionary[@"releasedAt"];
     }
     

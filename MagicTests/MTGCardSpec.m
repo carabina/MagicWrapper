@@ -29,7 +29,7 @@ describe(@"MTGCard", ^{
                 expect(card.promo).to.beFalsy();
             });
             
-            xit(@"has the correct subType", ^{
+            it(@"has the correct subType", ^{
                 expect(card.subType).to.beNil();
             });
             

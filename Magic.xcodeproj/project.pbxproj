@@ -34,6 +34,7 @@
 		7A8A4C661A20671800B489D1 /* MTGCardRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C651A20671800B489D1 /* MTGCardRequestSpec.m */; };
 		7A8A4C681A2067B700B489D1 /* MTGAPIWrapperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C671A2067B700B489D1 /* MTGAPIWrapperSpec.m */; };
 		7A8A4C6E1A2096AA00B489D1 /* MTGResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C6D1A2096AA00B489D1 /* MTGResponse.m */; };
+		7AF8AD481A295AA900711B84 /* NSDictionary+MagicWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8AD471A295AA900711B84 /* NSDictionary+MagicWrapper.m */; };
 		7AFE91CB1A1DBFC70006165A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91CA1A1DBFC70006165A /* main.m */; };
 		7AFE91CE1A1DBFC70006165A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91CD1A1DBFC70006165A /* AppDelegate.m */; };
 		7AFE91D11A1DBFC70006165A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91D01A1DBFC70006165A /* ViewController.m */; };
@@ -94,6 +95,8 @@
 		7A8A4C6C1A2096AA00B489D1 /* MTGResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGResponse.h; sourceTree = "<group>"; };
 		7A8A4C6D1A2096AA00B489D1 /* MTGResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGResponse.m; sourceTree = "<group>"; };
 		7ABF410D1A26968E004F0667 /* MagicWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicWrapper.h; sourceTree = "<group>"; };
+		7AF8AD461A295AA900711B84 /* NSDictionary+MagicWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MagicWrapper.h"; sourceTree = "<group>"; };
+		7AF8AD471A295AA900711B84 /* NSDictionary+MagicWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MagicWrapper.m"; sourceTree = "<group>"; };
 		7AFE91C51A1DBFC70006165A /* Magic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFE91C91A1DBFC70006165A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFE91CA1A1DBFC70006165A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -153,7 +156,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7A1B8EE21A1DC2DC0083431C /* MTG API Wrapper */ = {
+		7A1B8EE21A1DC2DC0083431C /* Magic Wrapper */ = {
 			isa = PBXGroup;
 			children = (
 				7ABF410D1A26968E004F0667 /* MagicWrapper.h */,
@@ -181,8 +184,10 @@
 				7A8A4C6D1A2096AA00B489D1 /* MTGResponse.m */,
 				7A8A4C541A1F21F900B489D1 /* MTGSearchRequest.h */,
 				7A8A4C551A1F21F900B489D1 /* MTGSearchRequest.m */,
+				7AF8AD461A295AA900711B84 /* NSDictionary+MagicWrapper.h */,
+				7AF8AD471A295AA900711B84 /* NSDictionary+MagicWrapper.m */,
 			);
-			name = "MTG API Wrapper";
+			name = "Magic Wrapper";
 			path = Magic;
 			sourceTree = "<group>";
 		};
@@ -209,9 +214,9 @@
 		7AFE91BC1A1DBFC60006165A = {
 			isa = PBXGroup;
 			children = (
-				7AFE91C71A1DBFC70006165A /* MTG Demo App */,
-				7A1B8EE21A1DC2DC0083431C /* MTG API Wrapper */,
-				7AFE91E11A1DBFC70006165A /* MTG API Wrapper Specs */,
+				7AFE91C71A1DBFC70006165A /* Demo App */,
+				7A1B8EE21A1DC2DC0083431C /* Magic Wrapper */,
+				7AFE91E11A1DBFC70006165A /* Magic Wrapper Specs */,
 				7AFE91C61A1DBFC70006165A /* Products */,
 				53C47C956ECD21B8FBC6C149 /* Pods */,
 				2A7BA7B0559D6BEB6E99F8E6 /* Frameworks */,
@@ -227,7 +232,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AFE91C71A1DBFC70006165A /* MTG Demo App */ = {
+		7AFE91C71A1DBFC70006165A /* Demo App */ = {
 			isa = PBXGroup;
 			children = (
 				7AFE91CC1A1DBFC70006165A /* AppDelegate.h */,
@@ -238,7 +243,7 @@
 				7A1B8EF81A1DE7D50083431C /* Resources */,
 				7AFE91C81A1DBFC70006165A /* Supporting Files */,
 			);
-			name = "MTG Demo App";
+			name = "Demo App";
 			path = Magic;
 			sourceTree = "<group>";
 		};
@@ -251,7 +256,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7AFE91E11A1DBFC70006165A /* MTG API Wrapper Specs */ = {
+		7AFE91E11A1DBFC70006165A /* Magic Wrapper Specs */ = {
 			isa = PBXGroup;
 			children = (
 				7A39199B1A2109CD005E68B9 /* Fixtures */,
@@ -268,7 +273,7 @@
 				7A8A4C591A1FAC6800B489D1 /* MTGSearchRequestSpec.m */,
 				7AFE91E21A1DBFC70006165A /* Supporting Files */,
 			);
-			name = "MTG API Wrapper Specs";
+			name = "Magic Wrapper Specs";
 			path = MagicTests;
 			sourceTree = "<group>";
 		};
@@ -452,6 +457,7 @@
 				7AFE91D11A1DBFC70006165A /* ViewController.m in Sources */,
 				7A1B8EE81A1DC47C0083431C /* MTGCardsRequest.m in Sources */,
 				7A8A4C561A1F21F900B489D1 /* MTGSearchRequest.m in Sources */,
+				7AF8AD481A295AA900711B84 /* NSDictionary+MagicWrapper.m in Sources */,
 				7AFE91CE1A1DBFC70006165A /* AppDelegate.m in Sources */,
 				7AFE91CB1A1DBFC70006165A /* main.m in Sources */,
 				7A1B8EF41A1DE1280083431C /* MTGCardTypesRequest.m in Sources */,
