@@ -3,6 +3,10 @@
 
 Magic Wrapper is an Objective-C client/wrapper for [M:tgDb](https://www.mtgdb.info/), the [Magic the Gathering](http://magic.wizards.com/) open database project. It consists of an API wrapper responsible for the network calls (``MTGAPIWrapper``), requests classes (subclasses of the ``MTGRequest`` class), and classes for cards and card sets (``MTGCard`` and ``MTGCardSet``).
 
+Check [DeckBrew Wrapper](https://github.com/otaviocc/DeckBrewWrapper) for my other Magic the Gathering API wrapper. It includes prices and card editions.
+
+---
+
 * [API Wrapper](#api-wrapper)
 * Requests
     * [Card Types Requests](#card-types-requests)
@@ -14,6 +18,8 @@ Magic Wrapper is an Objective-C client/wrapper for [M:tgDb](https://www.mtgdb.in
     * [MTGCardSet](#mtgcardset)
 * [Contributing](#contributing)
 * [License](#license)
+
+---
 
 ## How to use it?
 
